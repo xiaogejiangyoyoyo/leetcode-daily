@@ -1,15 +1,5 @@
 package 剑指offer;
 
-class TreeNode1 {
-    int val = 0;
-    TreeNode1 left = null;
-    TreeNode1 right = null;
-
-    public TreeNode1(int val) {
-        this.val = val;
-    }
-}
-
 public class a16_树的子结构 {
     private static boolean HasSubtree(TreeNode root1, TreeNode root2) {
         boolean result = false;
@@ -27,7 +17,6 @@ public class a16_树的子结构 {
         //返回结果
         return result;
     }
-
 
     private static boolean doesTree1HaveTree2(TreeNode node1, TreeNode node2) {
         //如果Tree2已经遍历完了都能对应的上，返回true

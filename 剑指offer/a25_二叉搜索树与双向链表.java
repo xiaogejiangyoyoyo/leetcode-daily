@@ -1,22 +1,9 @@
-import javax.swing.tree.TreeNode;
+package 剑指offer;
 
-/**
- * public class TreeNode {
- * int val = 0;
- * TreeNode left = null;
- * TreeNode right = null;
- * <p>
- * public TreeNode(int val) {
- * this.val = val;
- * <p>
- * }
- * <p>
- * }
- */
 //用中序遍历即可
-public class Solution {
-    TreeNode head = null;
-    TreeNode realHead = null;
+public class a25_二叉搜索树与双向链表 {
+    private TreeNode head = null;
+    private TreeNode realHead = null;
 
     public TreeNode Convert(TreeNode pRootOfTree) {
         ConvertSub(pRootOfTree);

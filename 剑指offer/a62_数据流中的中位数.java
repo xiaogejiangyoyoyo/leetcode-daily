@@ -1,16 +1,12 @@
-import java.util.Comparator;
+package 剑指offer;
+
 import java.util.PriorityQueue;
 
-public class Solution {
+public class a62_数据流中的中位数 {
 
     private int count = 0;
     private PriorityQueue<Integer> minHeap = new PriorityQueue<>();
-    private PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>(15, new Comparator<Integer>() {
-        @Override
-        public int compare(Integer o1, Integer o2) {
-            return o2 - o1;
-        }
-    });
+    private PriorityQueue<Integer> maxHeap = new PriorityQueue<>(15, (o1, o2) -> o2 - o1);
 
     public void Insert(Integer num) {
         if (count % 2 == 0) {//当数据总数为偶数时，新加入的元素，应当进入小根堆
@@ -33,7 +29,7 @@ public class Solution {
 
     public Double GetMedian() {
         if (count % 2 == 0) {
-            return new Double((minHeap.peek() + maxHeap.peek())) / 2;
+            return (double) (minHeap.peek() + maxHeap.peek()) / 2;
         } else {
             return new Double(minHeap.peek());
         }

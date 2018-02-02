@@ -1,21 +1,9 @@
-import javax.swing.tree.TreeNode;
+package 剑指offer;
+
 import java.util.ArrayList;
 
-/**
- * public class TreeNode {
- * int val = 0;
- * TreeNode left = null;
- * TreeNode right = null;
- * <p>
- * public TreeNode(int val) {
- * this.val = val;
- * <p>
- * }
- * <p>
- * }
- */
 //思路是用arraylist模拟一个队列来存储相应的TreeNode
-public class Solution {
+public class a21_从上往下打印二叉树 {
     public ArrayList<Integer> PrintFromTopToBottom(TreeNode root) {
         ArrayList<Integer> list = new ArrayList<>();
         ArrayList<TreeNode> queue = new ArrayList<>();

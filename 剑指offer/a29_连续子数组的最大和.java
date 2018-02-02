@@ -1,3 +1,5 @@
+package 剑指offer;
+
 /*
 算法时间复杂度O（n）
 用total记录累计值，maxSum记录和最大
@@ -6,7 +8,7 @@
 整体和是有贡献的。如果前几项累计值负数，则认为有害于总和，total记录当前值。
 此时 若和大于maxSum 则用maxSum记录下来
 */
-public class Solution {
+public class a29_连续子数组的最大和 {
     public int FindGreatestSumOfSubArray(int[] array) {
         if (array.length == 0)
             return 0;

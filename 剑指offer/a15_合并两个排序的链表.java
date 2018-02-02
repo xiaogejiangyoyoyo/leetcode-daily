@@ -1,17 +1,10 @@
 package 剑指offer;
 
-class ListNode1 {
-    int val;
-    ListNode1 next = null;
 
-    ListNode1(int val) {
-        this.val = val;
-    }
-}
 
 //递归版本
 public class a15_合并两个排序的链表 {
-    private ListNode1 Merge(ListNode1 list1, ListNode1 list2) {
+    private ListNode Merge(ListNode list1, ListNode list2) {
         if (list1 == null) return list2;
         if (list2 == null) return list1;
         if (list1.val <= list2.val) {
