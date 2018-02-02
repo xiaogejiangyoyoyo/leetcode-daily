@@ -1,4 +1,6 @@
-public class Solution {
+package 剑指offer;
+
+public class a05_旋转数组的最小数字 {
     public int minNumberInRotateArray(int[] array) {
         int low = 0;
         int high = array.length - 1;
