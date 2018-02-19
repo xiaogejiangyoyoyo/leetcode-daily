@@ -12,7 +12,7 @@ class ListNode {
 }
 
 public class a02_从头到尾打印链表 {
-    private ArrayList<Integer> arrayList = new ArrayList<>();
+    ArrayList<Integer> arrayList = new ArrayList<>();
 
     private ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
         if (listNode != null) {
